@@ -17,47 +17,12 @@
     .hero-copy{padding-top:28px;z-index:2}.kicker{margin:0 0 14px;color:var(--coral);font-size:14px;font-weight:900;letter-spacing:.11em}.hero h1{margin:0;color:var(--navy);font-family:Georgia,"Noto Serif KR",serif;font-size:clamp(36px,4.5vw,60px);line-height:1.18;letter-spacing:-.045em}.hero h1 em{display:block;margin-top:8px;color:var(--teal);font-style:normal;font-weight:500}.hero h1 em:last-child{font-weight:800}.welcome{margin:24px 0 0;font-size:18px;color:#53646a}.stamp{position:absolute;right:25px;top:22px;width:102px;height:102px;border:3px double rgba(23,59,87,.35);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(9deg);color:rgba(23,59,87,.46);font-family:Georgia,serif;line-height:1}.stamp span{font-size:13px;letter-spacing:.16em}.stamp b{font-size:28px}.postcard{position:relative;z-index:2;padding:16px 16px 48px;background:white;box-shadow:0 13px 30px rgba(51,45,35,.2);transform:rotate(2.2deg)}.postcard img{width:100%;height:380px;object-fit:cover;filter:saturate(.86) contrast(.96)}.caption{position:absolute;left:22px;bottom:10px;color:var(--navy);font-family:Georgia,"Noto Serif KR",serif;font-size:18px}.event-ticket{position:relative;display:grid;grid-template-columns:1fr 1fr 1.15fr;margin-top:30px;background:#f3e6cc;border:1px solid #cbb88f}.event-ticket:before,.event-ticket:after{content:"";position:absolute;left:-8px;width:16px;height:16px;border-radius:50%;background:var(--paper)}.event-ticket:before{top:-8px}.event-ticket:after{bottom:-8px}.event-ticket div{padding:15px 18px;border-right:1px dashed #b9a37c}.event-ticket div:last-child{border:0}.event-ticket small{display:block;color:#8b7555;font-size:11px}.event-ticket strong{display:block;color:var(--navy);font-size:15px}.hero-buttons{display:flex;gap:20px;margin-top:20px}.btn{display:inline-flex;min-height:48px;align-items:center;justify-content:center;padding:11px 21px;border:1px solid var(--navy);border-radius:999px;background:var(--paper);color:var(--navy);font-weight:900}.btn.primary{background:var(--navy);color:white}
     .section{width:min(1080px,calc(100% - 36px));margin:auto;padding:94px 0}.section-title{text-align:center;margin-bottom:42px}.section-title .en{margin:0;color:var(--coral);font:700 12px Georgia,serif;letter-spacing:.2em}.section-title h2{margin:7px 0 4px;color:var(--navy);font-family:Georgia,"Noto Serif KR",serif;font-size:clamp(35px,4.7vw,50px);letter-spacing:-.04em}.section-title>p:last-child{margin:0;color:var(--muted)}
     .meeting-card{position:relative;display:grid;grid-template-columns:150px 1fr 1.25fr;gap:28px;align-items:center;padding:42px;background:var(--paper);border:1px solid var(--line);box-shadow:11px 13px 0 #e0d0b3}.meeting-card:after{content:"ULSAN · SEP 15";position:absolute;right:22px;top:15px;color:#b2a087;font:700 11px Georgia,serif;letter-spacing:.16em}.calendar{display:flex;align-items:center;gap:7px;color:var(--coral)}.calendar b{font:700 70px/1 Georgia,serif}.calendar span{font:700 12px/1.25 Georgia,serif;letter-spacing:.1em}.label{margin:0;color:var(--coral);font-size:12px;font-weight:900;letter-spacing:.1em}.meeting-card h3{margin:0;color:var(--navy);font:700 36px Georgia,serif}.place{margin:11px 0 4px;font-size:18px}.meeting-card address{font-style:normal;color:var(--muted);font-size:14px}.note{padding:19px 21px;background:#f1e5cf;border-left:4px solid var(--coral);font-size:15px}.note p{margin:0}.maps{grid-column:2/4;display:flex;gap:8px}.maps a{padding:9px 18px;border-radius:999px;background:var(--navy);color:white;font-size:14px;font-weight:900}
-    .transport-notice {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  max-width: 900px;
-  margin: 0 auto 25px;
-  padding: 22px 24px;
-  background: #ffffff;
-  border: 2px solid #6f9fdb;
-  border-radius: 28px;
-  color: #333333;
-  line-height: 1.8;
-  text-align: left;
-}
-
-.transport-notice strong {
-  display: block;
-  margin-bottom: 7px;
-  color: #365d76;
-  font-size: 19px;
-}
-
-.transport-notice p {
-  margin: 0;
-  font-size: 17px;
-}
-
-@media (max-width: 600px) {
-  .transport-notice {
-    margin-bottom: 18px;
-    padding: 17px 18px;
-  }
-
-  .transport-notice strong {
-    font-size: 18px;
-  }
-
-  .transport-notice p {
-    font-size: 16px;
-  }
-}
+    .transport-notice{display:flex;align-items:flex-start;gap:15px;max-width:900px;margin:0 auto 25px;padding:22px 24px;background:#fff;border:2px solid #6f9fdb;border-radius:28px;color:#333;line-height:1.8;text-align:left}
+    .notice-icon{flex:0 0 auto;padding-top:1px;font-size:27px;line-height:1.4}
+    .notice-content{flex:1;min-width:0}
+    .notice-content strong{display:block;margin-bottom:6px;color:#365d76;font-size:19px}
+    .notice-content p{margin:0;color:#333;font-size:17px;line-height:1.8;word-break:keep-all}
+    @media(max-width:600px){.transport-notice{gap:11px;margin-bottom:20px;padding:18px 16px;border-radius:24px}.notice-icon{font-size:23px}.notice-content strong{font-size:18px}.notice-content p{font-size:16px;line-height:1.7}}
     .transport{display:grid;grid-template-columns:1.15fr .85fr;gap:20px}.train-ticket{position:relative;grid-row:span 2;padding:34px;background:#f2dfb9;border:2px solid var(--navy);box-shadow:8px 9px 0 rgba(23,59,87,.12)}.train-ticket:before,.train-ticket:after{content:"";position:absolute;right:-13px;width:25px;height:25px;border-radius:50%;background:var(--cream);border-left:2px solid var(--navy)}.train-ticket:before{top:25%}.train-ticket:after{bottom:25%}.ticket-head{display:flex;justify-content:space-between;align-items:flex-start;padding-bottom:20px;border-bottom:2px dashed rgba(23,59,87,.35)}.ticket-head .route{color:var(--navy);font:700 32px Georgia,serif}.ticket-head span{padding:6px 10px;background:var(--coral);color:white;font-size:12px;font-weight:900}.big-time{margin:22px 0 15px}.big-time small{display:block;color:#795f3d;font-weight:800}.big-time b{color:var(--navy);font:700 clamp(47px,6vw,67px)/1 Georgia,serif}.big-time em{font-style:normal;font-weight:900}.train-ticket dl{margin:20px 0}.train-ticket dl div{display:flex;justify-content:space-between;gap:20px;padding:9px 0;border-bottom:1px dashed rgba(86,69,43,.35)}.train-ticket dd{margin:0;text-align:right;font-weight:900}.train-alert{padding:14px 16px;background:rgba(255,253,246,.58);font-size:14px}.pickup{font-weight:900}.pickup a{color:var(--blue,#214d90);text-decoration:underline}.travel-card{padding:28px;background:var(--paper);border:1px solid var(--line)}.travel-card header{display:flex;align-items:center;gap:13px}.travel-card .icon{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--teal-light);font-size:22px}.travel-card small{color:var(--coral);font-weight:900}.travel-card h3{margin:-3px 0 0;color:var(--navy);font-size:22px}.travel-card p{margin-bottom:0}.travel-card .cost{display:inline-block;margin-top:13px;color:var(--teal);font-weight:900}.parking{grid-column:1/3}.parking ul{display:grid;grid-template-columns:1fr 1fr;gap:4px 30px;margin-bottom:0}
     .stay{background:var(--navy);color:white}.stay .section-title h2{color:white}.stay .section-title>p:last-child{color:#c5d0d1}.stay-inner{width:min(1080px,calc(100% - 36px));margin:auto;padding:94px 0}.key-card{display:grid;grid-template-columns:260px 1fr;gap:55px;align-items:center;padding:42px;background:#214963;border:1px solid rgba(255,255,255,.15)}.keyring{position:relative;width:230px;height:155px;margin:auto;padding:22px;background:var(--coral);box-shadow:12px 12px 0 #17374e;transform:rotate(-3deg);font-family:Georgia,serif}.keyring:before{content:"";position:absolute;right:14px;top:13px;width:14px;height:14px;border:5px solid #f0d39b;border-radius:50%}.keyring small{letter-spacing:.2em}.keyring b{display:block;margin-top:14px;font-size:29px;
   line-height:1.15;
@@ -99,47 +64,6 @@
       .stamp{display:none !important}
 .postcard{position:relative;z-index:2}
     }
-    .notice-icon {
-  display: flex;
-  flex: 0 0 48px;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-  margin-top: 1px;
-  background: #eef5fc;
-  border-radius: 50%;
-}
-
-.notice-icon svg {
-  display: none;
-}
-
-.notice-icon::before {
-  content: "📣";
-  display: block;
-  font-size: 26px;
-  line-height: 1;
-}
-
-.notice-content {
-  flex: 1;
-}
-
-.notice-content strong {
-  display: block;
-  margin-bottom: 6px;
-  color: #365d76;
-  font-size: 19px;
-}
-
-.notice-content p {
-  margin: 0;
-  color: #333333;
-  font-size: 17px;
-  line-height: 1.8;
-  word-break: keep-all;
-}
   </style>
 </head>
 <body>
@@ -158,12 +82,7 @@
 
   <div class="transport-notice">
 
-    <div class="notice-icon" aria-hidden="true">
-      <svg viewBox="0 0 64 64">
-        <path d="M13 27v10c0 3 2 5 5 5h7l5 11h8l-5-13 18-9V17l-26 10h-7c-3 0-5 2-5 5z"/>
-        <path d="M54 22l6-4M55 31h7M54 40l6 4"/>
-      </svg>
-    </div>
+    <div class="notice-icon" aria-hidden="true">📣</div>
 
     <div class="notice-content">
       <strong>교통편 이용 안내</strong>
