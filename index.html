@@ -18,13 +18,16 @@
     .section{width:min(1080px,calc(100% - 36px));margin:auto;padding:94px 0}.section-title{text-align:center;margin-bottom:42px}.section-title .en{margin:0;color:var(--coral);font:700 12px Georgia,serif;letter-spacing:.2em}.section-title h2{margin:7px 0 4px;color:var(--navy);font-family:Georgia,"Noto Serif KR",serif;font-size:clamp(35px,4.7vw,50px);letter-spacing:-.04em}.section-title>p:last-child{margin:0;color:var(--muted)}
     .meeting-card{position:relative;display:grid;grid-template-columns:150px 1fr 1.25fr;gap:28px;align-items:center;padding:42px;background:var(--paper);border:1px solid var(--line);box-shadow:11px 13px 0 #e0d0b3}.meeting-card:after{content:"ULSAN · SEP 15";position:absolute;right:22px;top:15px;color:#b2a087;font:700 11px Georgia,serif;letter-spacing:.16em}.calendar{display:flex;align-items:center;gap:7px;color:var(--coral)}.calendar b{font:700 70px/1 Georgia,serif}.calendar span{font:700 12px/1.25 Georgia,serif;letter-spacing:.1em}.label{margin:0;color:var(--coral);font-size:12px;font-weight:900;letter-spacing:.1em}.meeting-card h3{margin:0;color:var(--navy);font:700 36px Georgia,serif}.place{margin:11px 0 4px;font-size:18px}.meeting-card address{font-style:normal;color:var(--muted);font-size:14px}.note{padding:19px 21px;background:#f1e5cf;border-left:4px solid var(--coral);font-size:15px}.note p{margin:0}.maps{grid-column:2/4;display:flex;gap:8px}.maps a{padding:9px 18px;border-radius:999px;background:var(--navy);color:white;font-size:14px;font-weight:900}
     .transport-notice {
-  margin: 0 auto 22px;
-  padding: 20px 22px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
   max-width: 900px;
-  background: #f4f7f9;
-  border-left: 5px solid #567d96;
-  border-radius: 10px;
-  color: #333;
+  margin: 0 auto 25px;
+  padding: 22px 24px;
+  background: #ffffff;
+  border: 2px solid #6f9fdb;
+  border-radius: 28px;
+  color: #333333;
   line-height: 1.8;
   text-align: left;
 }
@@ -96,6 +99,47 @@
       .stamp{display:none !important}
 .postcard{position:relative;z-index:2}
     }
+    .notice-icon {
+  display: flex;
+  flex: 0 0 48px;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-top: 1px;
+  background: #eef5fc;
+  border-radius: 50%;
+}
+
+.notice-icon svg {
+  display: none;
+}
+
+.notice-icon::before {
+  content: "📣";
+  display: block;
+  font-size: 26px;
+  line-height: 1;
+}
+
+.notice-content {
+  flex: 1;
+}
+
+.notice-content strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #365d76;
+  font-size: 19px;
+}
+
+.notice-content p {
+  margin: 0;
+  color: #333333;
+  font-size: 17px;
+  line-height: 1.8;
+  word-break: keep-all;
+}
   </style>
 </head>
 <body>
