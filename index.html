@@ -18,9 +18,6 @@
     .section{width:min(1080px,calc(100% - 36px));margin:auto;padding:94px 0}.section-title{text-align:center;margin-bottom:42px}.section-title .en{margin:0;color:var(--coral);font:700 12px Georgia,serif;letter-spacing:.2em}.section-title h2{margin:7px 0 4px;color:var(--navy);font-family:Georgia,"Noto Serif KR",serif;font-size:clamp(35px,4.7vw,50px);letter-spacing:-.04em}.section-title>p:last-child{margin:0;color:var(--muted)}
     .meeting-card{position:relative;display:grid;grid-template-columns:150px 1fr 1.25fr;gap:28px;align-items:center;padding:42px;background:var(--paper);border:1px solid var(--line);box-shadow:11px 13px 0 #e0d0b3}.meeting-card:after{content:"ULSAN · SEP 15";position:absolute;right:22px;top:15px;color:#b2a087;font:700 11px Georgia,serif;letter-spacing:.16em}.calendar{display:flex;align-items:center;gap:7px;color:var(--coral)}.calendar b{font:700 70px/1 Georgia,serif}.calendar span{font:700 12px/1.25 Georgia,serif;letter-spacing:.1em}.label{margin:0;color:var(--coral);font-size:12px;font-weight:900;letter-spacing:.1em}.meeting-card h3{margin:0;color:var(--navy);font:700 36px Georgia,serif}.place{margin:11px 0 4px;font-size:18px}.meeting-card address{font-style:normal;color:var(--muted);font-size:14px}.note{padding:19px 21px;background:#f1e5cf;border-left:4px solid var(--coral);font-size:15px}.note p{margin:0}.maps{grid-column:2/4;display:flex;gap:8px}.maps a{padding:9px 18px;border-radius:999px;background:var(--navy);color:white;font-size:14px;font-weight:900}
     .transport-notice {
-  display: flex;
-  align-items: flex-start;
-  gap: 15px;
   max-width: 900px;
   margin: 0 auto 25px;
   padding: 22px 24px;
@@ -29,8 +26,31 @@
   border-radius: 16px;
   box-shadow: 5px 6px 0 rgba(216, 201, 173, 0.45);
   color: #333;
+}
+    .notice-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.notice-title span {
+  font-size: 25px;
+  line-height: 1;
+}
+
+.notice-title strong {
+  color: #365d76;
+  font-size: 19px;
+}
+
+.transport-notice > p {
+  margin: 0;
+  font-size: 17px;
   line-height: 1.8;
-  text-align: left;
+  text-align: justify;
+  text-justify: inter-word;
+  word-break: keep-all;
 }
     .notice-icon{flex:0 0 auto;padding-top:1px;font-size:27px;line-height:1.4}
     .notice-content{flex:1;min-width:0}
@@ -135,21 +155,19 @@
 
   <div class="transport-notice">
 
-    <div class="notice-icon" aria-hidden="true">📣</div>
-
-    <div class="notice-content">
-      <strong>교통편 이용 안내</strong>
-      <p>
-      첫날 행사장 이동 시 차량 지원은 울산(통도사)역에 한해 제공됩니다.
-      고속·시외버스 및 태화강역 등 다른 교통편을 이용하시는 경우에는
-      행사장까지 택시를 이용해 주시기 바랍니다.
-    </p>
-    <p class="notice-return">
-      귀가 시에는 울산(통도사)역과 태화강역까지 관광버스를 운행합니다.
-      </p>
-    </div>
-
+  <div class="notice-title">
+    <span aria-hidden="true">📣</span>
+    <strong>교통편 이용 안내</strong>
   </div>
+
+  <p>
+    첫날 행사장 이동 시 차량 지원은 울산(통도사)역에 한해 제공됩니다.
+    고속·시외버스 및 태화강역 등 다른 교통편을 이용하시는 경우에는
+    행사장까지 택시를 이용해 주시기 바랍니다.<br>
+    귀가 시에는 울산(통도사)역과 태화강역까지 관광버스를 운행합니다.
+  </p>
+
+</div>
 
   <div class="transport">
     <article class="train-ticket"><div class="ticket-head"><div class="route">울산(통도사)역<br>픽업 안내</div><span>KTX PICK-UP</span></div><div class="big-time"><small>픽업차량 출발시간</small><b>11:40</b> <em>울산(통도사)역</em></div><dl><div><dt>만남 장소</dt><dd>3번 출구 앞</dd></div><div><dt>차량</dt><dd>45인승 버스</dd></div></dl><p class="train-alert">울산역 승하차 구역은 장시간 정차가 어려우며, 5분 이상 정차 시 단속될 수 있습니다. 버스 도착 <strong style="color:#bd624d;">즉시 탑승</strong>할 수 있도록 미리 준비해 주세요.</p><p class="pickup">픽업 담당   지종열 실장 <a href="tel:01055954341">010-5595-4341</a>
